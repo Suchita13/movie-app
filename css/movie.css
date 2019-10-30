@@ -1,0 +1,152 @@
+@import 'reset.css';
+@import 'common.css';
+
+.movie-section{
+	flex:90%;
+}
+
+/* navigation bar starts*/
+.header{
+	width:100%;
+}
+
+.navbar{
+	background-color:#212F3C;
+	line-height:1.5em;
+	border-radius:0.3em;
+}
+
+.navbar__list{
+	display: table;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar__list .navbar__list__items{
+   	display: table-cell;
+}
+
+.navbar__list .navbar__list__items:nth-child(1){
+	font-size:1.2em;
+	width:15%;
+}
+.navbar__list .navbar__list__items:nth-child(2){
+    width:15%;
+}
+.navbar__list .navbar__list__items:nth-child(3){
+	width:70%;
+}
+
+.navbar__list .navbar__list__items a{
+	color:gray;
+	display:block;
+	text-decoration: none;
+	text-align:center;
+	padding: 8px;
+    background-color: #212F3C;
+}
+
+.navbar__list .navbar__list__items:nth-child(2) a{
+	color:white;
+	background-color: black;
+}
+.navbar__list .navbar__list__items:nth-child(3) a{
+	text-align:left;
+}
+
+/* navigation bar ends*/
+
+/*movie cards starts*/
+.latest-movies, .trending-movies, .most-watched-movies{
+	display: flex;
+	flex-flow : row wrap;
+	width:89%;
+	margin:0px auto;
+}
+.banner{
+	width:100%;
+	height:35px;
+}
+.banner__content{
+	margin:35px 96px;
+}
+.movielist{
+	flex: 20%;
+	margin:10px;
+	border: 1px solid gray;
+	height: 305px;
+}
+
+.movielist figure{
+	width:100%;
+	margin:0px;
+}
+.movie-img{
+	width:100%;
+	height:170px;
+}
+.left-span{
+    width: 70%;
+    height: 31px;
+    font-size: 1.3em;
+    padding: 5px;
+    margin-left: 7px;
+    float: left;
+}
+
+.latest-movies .movielist:nth-child(odd) .fa-heart{
+	display:inline-block !important;
+	color:red;
+	width:7%;
+    margin: 13px 5px 0px 24px;
+}
+.latest-movies .movielist:nth-child(even) .fa-heart-o{
+	display:inline-block !important;
+	width:7%;
+	margin: 13px 5px 0px 24px;
+
+}
+.trending-movies .movielist:nth-child(1) .fa-heart , .trending-movies .movielist:nth-child(2) .fa-heart {
+	display:inline-block !important;
+	color:red;
+	width:7%;
+    margin: 13px 5px 0px 24px;
+}
+.trending-movies .movielist:nth-child(3) .fa-heart-o, .trending-movies .movielist:nth-child(4) .fa-heart-o {
+	display:inline-block !important;
+	width:7%;
+	margin: 13px 5px 0px 24px;
+
+}
+.most-watched-movies .movielist:nth-child(2) .fa-heart , .most-watched-movies .movielist:nth-child(3) .fa-heart {
+	display:inline-block !important;
+	color:red;
+	width:7%;
+    margin: 13px 5px 0px 24px;
+}
+.most-watched-movies .movielist:nth-child(1) .fa-heart-o, .most-watched-movies .movielist:nth-child(4) .fa-heart-o {
+	display:inline-block !important;
+	width:7%;
+	margin: 13px 5px 0px 24px;
+
+}
+
+.movielist p{
+	margin-left:10px;
+	color:gray;
+	height:12px;
+	margin-top:44px;
+}
+
+.movielist > i{
+	margin-left:6px;
+}
+
+.movielist >a{
+	float:right;
+	margin-right:20px;
+	color:skyblue;
+}
+
+/*movie cards ends*/
+
