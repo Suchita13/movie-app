@@ -1,19 +1,18 @@
-  @media only screen and (max-width:768px) and (min-width:550px){
-  	.banner__content{
-			margin:35px 30px;
-		}
-
-	.latest-movies, .trending-movies, .most-watched-movies{
-			display: flex;
-			flex-flow : row wrap;
-			width:95%;
-			margin:0px auto;
-	}	
-
+    @media only screen and (max-width:1000px){
 	.movielist{
-			flex: 40%;
-			margin:10px;
-			border: 1px solid gray;
-			height: 305px;
-		}	
+		width: 30%;
+	}	
   }
+
+  @media only screen and (max-width:768px){
+	.movielist{
+		width: 44%;
+	}	
+  }
+
+  @media only screen and (max-width: 550px) {
+    .movielist{
+        width:100%;
+    }
+  }
+
