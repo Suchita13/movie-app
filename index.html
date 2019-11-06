@@ -12,50 +12,108 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-	<main class='main'>
+	<header class='header'>
+		<nav class='navbar'>
+			<ul class='navbar__list'>
+				<li class='navbar__list__item'>
+					<a href='#' class='link'>Movie App</a>
+				</li>
+				<li class='navbar__list__item'>
+					<a href='#' class='link'>Home</a>
+				</li>
+				<li class='navbar__list__item'>
+					<a href='#' class='link'>Explore</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
 		<section class='movie-section'>
-			<header class='header'>
-				<nav class='navbar'>
-					<ul class='navbar__list'>
-						<li class='navbar__list__items'>
-							<a href='#'>Movie App</a>
-						</li>
-						<li class='navbar__list__items'>
-							<a href='#'>Home</a>
-						</li>
-						<li class='navbar__list__items'>
-							<a href='#'>Explore</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<!-- latest movie section starts -->
-			<header class='banner'>
-				<h1 class='banner__content'>Latest</h1>
-			</header>	
-			<section class='latest-movies'>
+			<h1 class='banner__content'>
+				Latest
+			</h1>
+		</section>
+		<section class='movie-section'>
+			<h1 class='banner__content'>
+				Trending
+			</h1>
+		</section>
+		<section class='movie-section'>
+			<h1 class='banner__content'>
+				Most Watched
+			</h1>
+		</section>	
+		<template>
+			<section class='movielist'>
+				<figure class='figure'>
+					<img src class='movie-img'>
+				</figure>
+				<span class='left-span title'>
+					<strong></strong>
+				</span>
+				<span class='right-span hearts'></span>
+				<p class='clearfix genres'></p>
+				<span class='ratings'></span>
+				<a href='#' class='show-more'>Show more</a>
 			</section>
-			<!--  latest movie section ends -->
-            
-            <!--  trending movie section starts-->
-			<header class='banner'>
-				<h1 class='banner__content'>Trending</h1>
-			</header>	
-			<section class='trending-movies'>
-			</section>
-			<!--  trending movie section ends -->
-
-			<!--  most watched movie section starts -->
-			<header class='banner'>
-				<h1 class='banner__content'>Most Watched</h1>
-			</header>
-			<section class='most-watched-movies'>
-			</section>
-			<!--  most watched movie section ends -->
-        </section>
+		</template>
+		<template>
+			<section data-modal="form" class="modal-wrapper">
+			  <article class="modal-body">
+			    <header class='modal-header'>
+			      <h2 class='modal-header__banner'></h2>
+			      <button class="close">X</button>
+			    </header>
+			    <div class="modal-main clearfix">
+				    <img src alt="palceholder" class='movie-image'>
+				    <div class='overview'></div>
+			    </div>
+			    <footer class='modal-footer clearfix'>
+			    	<table class='footer-table'>
+			    		<tr class='table-row'>
+			    			<td class='table-column'>
+			    				<strong>Genre</strong>
+			    			</td>
+			    			<td class='genre table-column'>
+			    			</td>
+			    		</tr>
+			    		<tr>
+			    			<td class='table-column'>
+			    				<strong>Cast</strong>
+			    			</td>
+			    			<td class='cast table-column'>
+			    			</td>
+			    		</tr>
+			    		<tr>
+			    			<td class='table-column'>
+			    				<strong>Director</strong>
+			    			</td>
+			    			<td class='director table-column'>
+			    			</td>
+			    		</tr>
+			    		<tr>
+			    			<td class='table-column'>
+			    				<strong>Movie Rating </strong>
+			    			</td>
+			    			<td class='ratings table-column'>
+			    			</td>
+			    		</tr>
+			    		<tfoot class='tfoot'>
+			    			<tr>
+			    				<td colspan='2' class='tfoot-row'>
+			    					<button class='close-button'>
+			    					Close
+			    				</button>
+			    			</td>
+			    			</tr>
+			    		</tfoot>
+			    	</table>	
+			    </footer>
+			  </article>
+			</section>			      
+		</template>
 	</main>
-	<script type="text/javascript" src='js/dom.js'></script>
-	<script type="text/javascript" src='js/movie-cards.js'></script>
-	<script type="text/javascript" src='js/movie-details.js'></script>
+	<script type="module" src='./js/main.js'></script>
+
 </body>
 </html>
